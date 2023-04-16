@@ -243,12 +243,14 @@
       <!-- End Page Container -->
     </div>
     <script>
-      const toggleThemeButton = document.getElementById('toggle-theme');
+      const toggleDarkMode = document.querySelector('.toggle-dark-mode');
+      const body = document.querySelector('body');
     
-      toggleThemeButton.addEventListener('click', function() {
-        document.body.classList.toggle('w3-dark-grey');
+      toggleDarkMode.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
       });
     </script>
+    
   
     <footer class="w3-container w3-teal w3-center w3-margin-top">
       <p>Minhas Redes Sociais</p>
